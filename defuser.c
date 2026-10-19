@@ -24,6 +24,15 @@ int solve_phase_1(uint64_t challenge, char *out, size_t cap) {
     size_t count = 0;
     (void)challenge;
     // TODO: 根据 phase_01 的汇编，用 challenge 算出口令中的各个整数，依次存入 values，并把 count 改为整数个数。
+    uint32_t left = (uint32_t)(challenge >> 32);
+    uint32_t right = (uint32_t)(challenge & 0xFFFFFFFF);
+    uint32_t mid = (uint32_t)((challenge >> 16) & 0xFFFFFFFF);
+    uint32_t p = (left + 0x6960) ^ right;
+    uint32_t q = ((left * 3) + mid) ^ 0x88c3;
+    uint32_t ans = (p * 4) + (q ^ 0xa42f);
+
+    values[0] = ans;
+    count = 1;
     return write_answer(out, cap, values, count);
 }
 
