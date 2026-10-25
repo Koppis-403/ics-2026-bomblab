@@ -229,6 +229,8 @@ uint32_t value2 = value1^temp;
 
 于是最后的输出结果可以是（—32个字母—）OPENvalue0 value1 value2
 
+总体上是这样的![make test](images/mt.png)
+
 ## AI辅助说明
 AI参考了仓库 README.md、汇编语言和GDB观察结果，
 首先让他根据教材内容给出了一些这个lab需要用到的相关知识，由我进行整理和学习；我在phase卡住的时候为汇编代码提供了说明，并且给出了gdb里一些读取文件的操作。使用AI辅助核对计算式，编译以及调整公开测试中的错误。
