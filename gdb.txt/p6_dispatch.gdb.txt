@@ -1,0 +1,29 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Dump of assembler code for function p6_dispatch:
+   0x0000000000402520 <+0>:	endbr64
+   0x0000000000402524 <+4>:	push   %rbp
+   0x0000000000402525 <+5>:	mov    %rsp,%rbp
+   0x0000000000402528 <+8>:	push   %rbx
+   0x0000000000402529 <+9>:	mov    %rdi,%rbx
+   0x000000000040252c <+12>:	shr    $0x6,%rdi
+   0x0000000000402530 <+16>:	mov    %rbx,%rax
+   0x0000000000402533 <+19>:	shr    $0x20,%rax
+   0x0000000000402537 <+23>:	xor    %eax,%edi
+   0x0000000000402539 <+25>:	mov    %rbx,%rax
+   0x000000000040253c <+28>:	sub    $0x8,%rsp
+   0x0000000000402540 <+32>:	and    $0x38,%ebx
+   0x0000000000402543 <+35>:	and    $0x7,%eax
+   0x0000000000402546 <+38>:	call   *0x405dc0(,%rax,8)
+   0x000000000040254d <+45>:	xor    $0x31a6,%eax
+   0x0000000000402552 <+50>:	mov    %eax,%edi
+   0x0000000000402554 <+52>:	call   *0x405dc0(%rbx)
+   0x000000000040255a <+58>:	mov    -0x8(%rbp),%rbx
+   0x000000000040255e <+62>:	leave
+   0x000000000040255f <+63>:	add    $0x361b,%eax
+   0x0000000000402564 <+68>:	ret
+End of assembler dump.

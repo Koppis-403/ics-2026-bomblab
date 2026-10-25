@@ -1,0 +1,46 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Dump of assembler code for function p4_walk:
+   0x00000000004022d0 <+0>:	endbr64
+   0x00000000004022d4 <+4>:	mov    %edi,%eax
+   0x00000000004022d6 <+6>:	mov    %edx,%edi
+   0x00000000004022d8 <+8>:	sub    %esi,%edi
+   0x00000000004022da <+10>:	shr    $1,%edi
+   0x00000000004022dc <+12>:	add    %esi,%edi
+   0x00000000004022de <+14>:	cmp    %eax,%edi
+   0x00000000004022e0 <+16>:	je     0x402330 <p4_walk+96>
+   0x00000000004022e2 <+18>:	push   %rbp
+   0x00000000004022e3 <+19>:	mov    %rsp,%rbp
+   0x00000000004022e6 <+22>:	push   %rbx
+   0x00000000004022e7 <+23>:	lea    (%rdi,%rcx,1),%ebx
+   0x00000000004022ea <+26>:	sub    $0x8,%rsp
+   0x00000000004022ee <+30>:	cmp    %edi,%eax
+   0x00000000004022f0 <+32>:	jb     0x402310 <p4_walk+64>
+   0x00000000004022f2 <+34>:	lea    0x1(%rdi),%esi
+   0x00000000004022f5 <+37>:	mov    %eax,%edi
+   0x00000000004022f7 <+39>:	call   0x4022d0 <p4_walk>
+   0x00000000004022fc <+44>:	lea    (%rax,%rax,4),%eax
+   0x00000000004022ff <+47>:	xor    %ebx,%eax
+   0x0000000000402301 <+49>:	mov    -0x8(%rbp),%rbx
+   0x0000000000402305 <+53>:	leave
+   0x0000000000402306 <+54>:	xor    $0x15,%eax
+   0x0000000000402309 <+57>:	ret
+   0x000000000040230a <+58>:	nopw   0x0(%rax,%rax,1)
+   0x0000000000402310 <+64>:	lea    -0x1(%rdi),%edx
+   0x0000000000402313 <+67>:	mov    %eax,%edi
+   0x0000000000402315 <+69>:	call   0x4022d0 <p4_walk>
+   0x000000000040231a <+74>:	lea    (%rax,%rax,4),%eax
+   0x000000000040231d <+77>:	xor    %ebx,%eax
+   0x000000000040231f <+79>:	mov    -0x8(%rbp),%rbx
+   0x0000000000402323 <+83>:	leave
+   0x0000000000402324 <+84>:	xor    $0x1f,%eax
+   0x0000000000402327 <+87>:	ret
+   0x0000000000402328 <+88>:	nopl   0x0(%rax,%rax,1)
+   0x0000000000402330 <+96>:	lea    0x87(%rdi),%eax
+   0x0000000000402336 <+102>:	xor    %ecx,%eax
+   0x0000000000402338 <+104>:	ret
+End of assembler dump.

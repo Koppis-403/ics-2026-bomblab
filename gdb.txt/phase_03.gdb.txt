@@ -1,0 +1,54 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Dump of assembler code for function p3_case_0:
+   0x0000000000402140 <+0>:	endbr64
+   0x0000000000402144 <+4>:	mov    %edi,%eax
+   0x0000000000402146 <+6>:	shr    $0x2,%edi
+   0x0000000000402149 <+9>:	xor    $0x2474,%eax
+   0x000000000040214e <+14>:	add    %edi,%eax
+   0x0000000000402150 <+16>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_1:
+   0x0000000000402160 <+0>:	endbr64
+   0x0000000000402164 <+4>:	lea    0x3c26(%rdi,%rdi,4),%eax
+   0x000000000040216b <+11>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_2:
+   0x0000000000402170 <+0>:	endbr64
+   0x0000000000402174 <+4>:	lea    0x289c4(%rdi,%rdi,4),%eax
+   0x000000000040217b <+11>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_3:
+   0x0000000000402180 <+0>:	endbr64
+   0x0000000000402184 <+4>:	lea    (%rdi,%rdi,1),%eax
+   0x0000000000402187 <+7>:	xor    $0xf833,%eax
+   0x000000000040218c <+12>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_4:
+   0x0000000000402190 <+0>:	endbr64
+   0x0000000000402194 <+4>:	lea    0x0(,%rdi,4),%eax
+   0x000000000040219b <+11>:	xor    $0x7b23,%eax
+   0x00000000004021a0 <+16>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_5:
+   0x00000000004021b0 <+0>:	endbr64
+   0x00000000004021b4 <+4>:	lea    0x4785b(%rdi,%rdi,4),%eax
+   0x00000000004021bb <+11>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_6:
+   0x00000000004021c0 <+0>:	endbr64
+   0x00000000004021c4 <+4>:	lea    0x1b1c(%rdi,%rdi,2),%eax
+   0x00000000004021cb <+11>:	ret
+End of assembler dump.
+Dump of assembler code for function p3_case_7:
+   0x00000000004021d0 <+0>:	endbr64
+   0x00000000004021d4 <+4>:	mov    %edi,%eax
+   0x00000000004021d6 <+6>:	shr    $0x2,%edi
+   0x00000000004021d9 <+9>:	xor    $0x21de,%eax
+   0x00000000004021de <+14>:	add    %edi,%eax
+   0x00000000004021e0 <+16>:	ret
+End of assembler dump.

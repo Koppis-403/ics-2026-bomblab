@@ -1,0 +1,46 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Dump of assembler code for function phase_05:
+   0x0000000000402420 <+0>:	endbr64
+   0x0000000000402424 <+4>:	push   %rbp
+   0x0000000000402425 <+5>:	mov    %rsp,%rbp
+   0x0000000000402428 <+8>:	push   %r12
+   0x000000000040242a <+10>:	mov    %rsi,%r12
+   0x000000000040242d <+13>:	mov    $0x2,%esi
+   0x0000000000402432 <+18>:	push   %rbx
+   0x0000000000402433 <+19>:	mov    %rdi,%rbx
+   0x0000000000402436 <+22>:	sub    $0x10,%rsp
+   0x000000000040243a <+26>:	call   0x402c20 <valid_u32_fields>
+   0x000000000040243f <+31>:	test   %al,%al
+   0x0000000000402441 <+33>:	jne    0x402450 <phase_05+48>
+   0x0000000000402443 <+35>:	xor    %eax,%eax
+   0x0000000000402445 <+37>:	add    $0x10,%rsp
+   0x0000000000402449 <+41>:	pop    %rbx
+   0x000000000040244a <+42>:	pop    %r12
+   0x000000000040244c <+44>:	pop    %rbp
+   0x000000000040244d <+45>:	ret
+   0x000000000040244e <+46>:	xchg   %ax,%ax
+   0x0000000000402450 <+48>:	xor    %eax,%eax
+   0x0000000000402452 <+50>:	lea    -0x18(%rbp),%rcx
+   0x0000000000402456 <+54>:	lea    -0x1c(%rbp),%rdx
+   0x000000000040245a <+58>:	mov    $0x40317f,%esi
+   0x000000000040245f <+63>:	mov    %rbx,%rdi
+   0x0000000000402462 <+66>:	call   0x4011e0 <__isoc99_sscanf@plt>
+   0x0000000000402467 <+71>:	cmp    $0x2,%eax
+   0x000000000040246a <+74>:	jne    0x402443 <phase_05+35>
+   0x000000000040246c <+76>:	lea    -0x14(%rbp),%rsi
+   0x0000000000402470 <+80>:	mov    %r12,%rdi
+   0x0000000000402473 <+83>:	call   0x4023c0 <p5_traverse>
+   0x0000000000402478 <+88>:	mov    %eax,%edx
+   0x000000000040247a <+90>:	xor    %eax,%eax
+   0x000000000040247c <+92>:	cmp    %edx,-0x1c(%rbp)
+   0x000000000040247f <+95>:	jne    0x402445 <phase_05+37>
+   0x0000000000402481 <+97>:	mov    -0x14(%rbp),%eax
+   0x0000000000402484 <+100>:	cmp    %eax,-0x18(%rbp)
+   0x0000000000402487 <+103>:	sete   %al
+   0x000000000040248a <+106>:	jmp    0x402445 <phase_05+37>
+End of assembler dump.
